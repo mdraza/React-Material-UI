@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Container, Box, Paper, Typography} from '@material-ui/core'
+import {green} from '@material-ui/core/colors'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container maxWidth="lg">
+      <Box p={3}>
+      <Paper elevation={5}>
+        <Typography variant="h2" style={{color: green.A700, backgroundColor: 'yellow'}}>Hi, This is React JS</Typography>
+        <Typography variant="subtitle1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Typography>
+      </Paper>
+      </Box>
+    </Container>
+  )
 }
 
-export default App;
+export default App
